@@ -2,12 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://nickleso.github.io/
-parcel-ice-team7",
+  "homepage": "https://nickleso.github.io/parcel-ice-team7",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /
-parcel-ice-team7/"
+    "build": "parcel build src/*.html --public-url /parcel-ice-team7/"
   },
   "repository": {
     "type": "git",
