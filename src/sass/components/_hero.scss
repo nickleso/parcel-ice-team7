@@ -17,18 +17,18 @@ a {
 .hero {
   position: relative;
   height: 502px;
-  min-width: 320px;
-  max-width: 480px;
-  background-color: #ffb8ca;
-  //   padding-top: 83px;
+  max-width: 320px;
+  // max-width: 480px;
+  background-color: var(--secondary-bcg);
+  overflow: hidden;
 
   @media (min-width: 768px) {
     height: 416px;
     max-width: 768px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     height: 664px;
-    max-width: 1280px;
+    max-width: 1200px;
   }
 }
 
@@ -48,11 +48,11 @@ a {
     width: 335px;
     height: 333px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 534px;
     height: 534px;
-    // left: 517px;
-    left: 557px;
+    left: 517px;
+    // left: 557px;
     top: 54px;
   }
 }
@@ -61,20 +61,24 @@ a {
   bottom: 0;
   //   left: 277px;
   z-index: 10;
-  right: 32px;
   width: 171px;
   height: 410px;
+  animation: fade-bottom-to-top 1.5s;
+
+  @media (max-width: 767.98px) {
+    right: 32px;
+  }
 
   @media (min-width: 768px) {
     left: 322px;
     width: 143px;
     height: 336px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 236px;
     height: 557px;
-    // left: 636px;
-    left: 676px;
+    left: 636px;
+    // left: 676px;
     bottom: 0;
   }
 }
@@ -88,14 +92,20 @@ a {
     left: 546px;
     width: 190px;
     height: 150px;
+    transition: transform 1s;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 304px;
     height: 241px;
-    // left: 880px;
-    left: 920px;
+    left: 880px;
+    // left: 920px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
+
 .hero__img-milk {
   @media (max-width: 767.98px) {
     display: none;
@@ -106,13 +116,18 @@ a {
     top: 246px;
     width: 152px;
     height: 154px;
+    transition: transform 1s;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 213px;
     height: 216px;
-    // left: 16px;
-    left: 56px;
+    left: 16px;
+    // left: 56px;
     top: 388px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -127,9 +142,9 @@ a {
     top: 102px;
     width: 162px;
   }
-  @media (min-width: 1280px) {
-    // left: 16px;
-    left: 56px;
+  @media (min-width: 1200px) {
+    left: 16px;
+    // left: 56px;
     top: 147px;
     width: 277px;
   }
@@ -137,22 +152,21 @@ a {
 .hero__title {
   font-family: 'Titan One', sans-serif;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--header-hero-text);
   font-size: 26px;
   line-height: 1.15;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 400;
 
   @media (min-width: 768px) {
     font-size: 22px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 38px;
   }
 }
 .hero__title--pink {
-  color: #d41443;
+  color: var(--accent-color);
   font-size: 48px;
   line-height: 1.15;
 
@@ -160,64 +174,64 @@ a {
     font-size: 34px;
     line-height: 0.9;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 58px;
   }
 }
-.button__link {
+.ref__link {
   display: flex;
 }
-.button {
+.ref {
   display: block;
-  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
   border-radius: 20px;
   border: none;
-  letter-spacing: 0.04em;
   cursor: pointer;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.3;
   }
 }
 
-.button__item + .button__item {
+.ref__item + .ref__item {
   margin-left: 8px;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     margin-left: 12px;
   }
 }
 
-.button--pink {
-  background-color: #d41443;
-  color: #ffffff;
+.ref--pink {
+  background-color: var(--accent-color);
+  color: var(--header-hero-text);
   padding: 7px 13.3px;
+  transition: background-color 300ms var(--cubic);
 
   &:hover,
   &:focus {
-    background-color: #e17992;
+    background-color: var(--mob-menu-color);
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     padding: 10.9px 22.16px;
   }
 }
-.button--white {
-  background-color: #fff;
-  color: #d41443;
+.ref--white {
+  background-color: var(--primary-bcg);
+  color: var(--accent-color);
   padding: 7px 11.3px;
+  transition: background-color 300ms var(--cubic);
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--hover-btn-primary);
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     padding: 10.9px 16.36px;
   }
 }
@@ -236,30 +250,45 @@ a {
     align-items: flex-start;
     width: 114px;
   }
-  @media (min-width: 1280px) {
-    // left: 229px;
-    left: 269px;
+  @media (min-width: 1200px) {
+    left: 229px;
+    // left: 269px;
     top: 456px;
-    width: 200px;
+    width: 199px;
   }
 }
 .hero-text {
   @media (min-width: 768px) {
-    font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
-    color: #ffffff;
+    letter-spacing: 0.03em;
+    color: var(--header-hero-text);
     margin-bottom: 7px;
+    height: 48px;
+    overflow: hidden;
+    transition: height 350ms var(--cubic);
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.43;
+    height: 76px;
+  }
+}
+.hero-text--open {
+  color: var(--hover-btn-primary);
+}
+.open {
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+  @media (min-width: 1200px) {
+    height: 160px;
   }
 }
 .desk__img-arrow {
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 26px;
     height: 26px;
   }
@@ -274,9 +303,11 @@ a {
     top: 94px;
     left: 693px;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
+    top: 156px;
     // left: 1112px;
-    left: 1152px;
+    right: 34px;
+    // left: 1152px;
   }
 }
 .stat__item {
@@ -292,25 +323,23 @@ a {
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--accent-color);
   z-index: 10;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 46px;
   }
 }
 
 .stat--smol {
-  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
-  color: #ffffff;
+  color: var(--header-hero-text);
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
   }
 }
@@ -321,10 +350,21 @@ a {
   width: 18px;
   height: 18px;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     width: 30px;
     height: 30px;
     top: -7px;
     right: -12px;
+  }
+}
+
+@keyframes fade-bottom-to-top {
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
