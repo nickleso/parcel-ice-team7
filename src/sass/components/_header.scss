@@ -1,1 +1,65 @@
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
 
+.page-header {
+  background-color: #ffb8ca;
+}
+.logo-icon {
+  width: 199px;
+  height: 50px;
+}
+.menu-button {
+  background-color: transparent;
+  border: none;
+}
+.icon-menu {
+  stroke: #d41443;
+}
+.icon-close {
+  stroke: #fff;
+}
+.close-button {
+  //   padding: 20px;
+}
+
+.buy-button {
+  border: none;
+  border-color: #ffffff;
+  border-radius: 22px;
+  color: #d41443;
+}
+
+.site-nav {
+  &__list {
+  }
+  &__item {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    border-bottom: 1px solid #e18298;
+    &:first-child {
+      border-top: 1px solid #e18298;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+}
+
+.menu-container {
+  background-color: #e17992;
+  height: 100vh;
+  max-width: 254px;
+}

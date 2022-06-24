@@ -1,0 +1,40 @@
+// variables
+:root {
+  // text colors
+  --primary-text: #000000;
+  --secondary-text: #907e82;
+  --header-hero-text: #ffffff;
+  --accent-color: #d41443;
+  --pink-color: #ffa5ba;
+
+  // background colors
+  --primary-bcg: #ffffff;
+  --secondary-bcg: #ffb8ca;
+
+  // mobile menu
+  --mob-menu-color: #e17992;
+
+  // button colors
+  --primary-btn: #ffffff;
+  --secondary-btn-color: #d41443;
+  --hover-btn-primary: #ecebeb;
+  --hover-btn-secondary: #ffa5ba;
+
+  // product-colors:
+  --ice-color: #ffb8ca;
+  --coffee-color: #f0d1a5;
+  --shake-color: #c2e297;
+
+  // review colors:
+  --pseudo-color: #e1e1e1;
+
+  // gradient colors:
+  --primary-gradient: #fff5f6;
+  --secondary-gradient: #ffffff;
+
+  // otline
+  --outline: 1px solid tomato;
+
+  // cubic
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
