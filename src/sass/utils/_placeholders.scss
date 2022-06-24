@@ -1,0 +1,18 @@
+// flex styles
+%centredFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%centredColumnFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// linl styles
+%linkStyles {
+  text-decoration: none;
+  cursor: pointer;
+}

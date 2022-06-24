@@ -1,5 +1,14 @@
 body {
-  background-color: antiquewhite;
+  color: var(--primary-text);
+  background-color: var(--primary-bcg);
+
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+
+  // font-family: 'Titan One', cursive; - резервний шрифт для Titan One
 }
 
 h1,
@@ -15,4 +24,24 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
