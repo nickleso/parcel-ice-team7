@@ -1,21 +1,17 @@
-.rev-slider {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
 .photo {
-    display: block;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 85px;
   height: 85px;
-  
+  background-color: #ffff;
+
   margin-bottom: 16px;
 }
 
 .text {
-  width: 750px;
+  width: 968px;
   padding: 47px 109px 39px 109px;
   background-color: #fafafa;
   margin-left: auto;
@@ -25,47 +21,20 @@
   font-size: 16px;
   line-height: 1.86;
   text-align: center;
-  
+
   letter-spacing: 0.04em;
 
-  color: #000000;
+  color: var(--primary-text);
 }
+
 
 .name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
-  
+  text-align: center;
 
-  color: #000000;
+  color: var(--primary-text);
 }
 
-.slider {
-    
-    display: inline-block;
-    text-align: center;
-}
 
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    font-size: 0;
-    
-}
-
-.slick-next {
-    height: 35px;
-    width: 35px;
-    right: 0;
-    background-image: url(/src/images/reviews/SVG/angle-right-solid.svg);
-    background-color: transparent;
-    border: 0;
-}
-
-.slick-prev {
-    height: 40px;
-    width: 40px;
-    left: 0;
-    background-image: url(/src/images/reviews/SVG/angle-right-solid.svg) 0 0 / 100% no-repeat;
-}
