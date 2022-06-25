@@ -1,22 +1,25 @@
 button {
   padding: 0;
+  cursor: pointer;
 }
 
 .page-header {
+  position: relative;
   background-color: var(--secondary-bcg);
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: 767.98px) {
     padding-left: 20px;
     padding-top: 8px;
     max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
   }
   @media (min-width: 768px) {
     padding: 32px 32px 0 32px;
+    width: 768px;
   }
   @media (min-width: 1200px) {
     padding: 32px 16px 0 16px;
+    width: 1200px;
   }
 }
 
@@ -27,9 +30,9 @@ button {
 
 .menu-button {
   background-color: transparent;
+  stroke: var(--accent-color);
   border: none;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 15px 20px;
 
   @media (min-width: 768px) {
     display: block;
@@ -52,35 +55,19 @@ button {
   }
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
-  // padding: 60px 20px;
-  background-color: #e17992;
-
-  @media (min-width: 768px) {
-    .buy-button {
-      width: 186px;
-      height: 44px;
-    }
-  }
-}
-
-.icon-menu {
-  stroke: var(--accent-color);
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.icon-close {
-  stroke: var(--primary-bcg);
-}
-
 .close-button {
   padding: 20px;
   display: block;
   margin-left: auto;
+  stroke: var(--primary-bcg);
+  &:hover,
+  &:focus {
+    stroke: var(--hover-btn-primary);
+  }
 }
 
 .buy-button {
+  @extend %centredFlex;
   border: none;
   background-color: var(--header-hero-text);
   border-radius: 22px;
@@ -90,26 +77,39 @@ button {
   font-size: 16px;
   line-height: 1.31;
   color: var(--accent-color);
+  margin-bottom: 19px;
   &:hover,
   &:focus {
     background-color: var(--hover-btn-primary);
   }
-
-  margin-bottom: 19px;
-  @media (max-width: 767.98px) {
-    width: 209px;
+  width: 209px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    width: 186px;
     height: 44px;
   }
+  &__icon {
+    margin-left: 14px;
+  }
 
-  &.buy-button__big-screen {
+  &__big-screen {
     @media (max-width: 767.98px) {
       display: none;
     }
     width: 160px;
     height: 44px;
     margin: 0;
+    &__icon {
+    }
   }
 }
+
+// .buy-button__icon {
+//   width: 10px;
+//   height: 10px;
+// }
 
 .site-nav {
   @media (min-width: 1200px) {
@@ -156,11 +156,11 @@ button {
 }
 
 .menu-container {
-  @media (max-width: 1199.8px) {
+  @media (max-width: 1199.98px) {
     width: 100vw;
-    max-width: 254px;
+    width: 250px;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     padding-left: 20px;
     top: 0;
     right: 0;
@@ -170,7 +170,12 @@ button {
 
     overflow: scroll;
     transform: translateX(100%);
-    transition: transform 250ms var(--cubic);
+    opacity: 0;
+    transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+
+    @media (min-width: 768px) {
+      width: 254px;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -178,6 +183,13 @@ button {
       display: none;
     }
   }
+}
+
+.menu-container.is-open {
+  opacity: 1;
+  transform: translateX(0);
+
+  background-color: #e17992;
 }
 
 .mob-menu-container {
