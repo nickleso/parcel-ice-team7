@@ -27,6 +27,10 @@
   color: var(--primary-text);
 }
 
+.rev-slider__text::before {
+  background-image: url(./src/images/reviews/untitled.svg);
+
+}
 
 .name {
   font-weight: 500;
