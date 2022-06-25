@@ -189,7 +189,7 @@ button {
     padding: 60px 20px;
     background-color: var(--mob-menu-color);
 
-    overflow: scroll;
+    overflow-y: scroll;
     transform: translateX(100%);
     opacity: 0;
     transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
