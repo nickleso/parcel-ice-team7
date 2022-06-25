@@ -67,6 +67,7 @@
   justify-content: center;
 }
 
+// Кнопка
 .btn {
   width: 198px;
   height: 44px;
@@ -75,8 +76,16 @@
   align-items: center;
   justify-content: center;
 
+//   стрелочка свг
   &__arrow {
     margin-left: 13px;
+ 
+         &::after {
+           border: 2px solid #ffffff;
+           fill: #ffffff;
+           justify-content: center;
+         }
+    
   }
 
   &--red {
@@ -85,11 +94,13 @@
     font-size: 16px;
     line-height: 1.31;
     margin-right: 12px;
+   
     color: #ffffff;
+    
 
     &::after {
-      
-      fill: #ffffff;
+      border: 2px solid #D41443;
+      fill: #D41443;
       justify-content: center;
     }
   }
