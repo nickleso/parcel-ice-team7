@@ -121,6 +121,8 @@ button {
   @media (min-width: 1200px) {
     &__list {
       display: flex;
+      margin: 0;
+      padding-left: 0;
 
       :not(:last-child) {
         margin-right: 35px;
@@ -147,6 +149,7 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+    text-decoration: none;
     transition: color 250ms var(--cubic);
 
     &:hover,
