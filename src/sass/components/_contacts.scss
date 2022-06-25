@@ -16,21 +16,6 @@
       margin-right: 32px;
     }
   }
-// Зежим работы////////////////////////
-  &__mode {
-    font-size: 16px;
-    line-height: 186%;
-
-    color: #ffa5ba;
-  }
-
-  &__text {
-    font-size: 16px;
-    line-height: 183%;
-    letter-spacing: 0.04em;
-
-    color: #907e82;
-  }
 
   &__title {
     width: 75px;
@@ -38,12 +23,9 @@
     font-size: 16px;
     line-height: 186%;
     margin-bottom: 32px;
-
     text-align: center;
     letter-spacing: 0.04em;
-
     border-radius: 5px;
-
     background-color: var(--coffee-color);
     color: #ffffff;
 
@@ -52,15 +34,54 @@
     }
     &--food {
       background-color: var(--shake-color);
+      width: 138px;
     }
   }
+
+  &--city {
+    width: 250px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+  }
+
+  &--mode {
+    padding-top: 32px;
+    padding-bottom: 6px;
+  }
+
+  &--holiday {
+    width: 250px;
+    padding-top: 6px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(225, 225, 225, 1);
+  }
+
+  &--navigation {
+    padding-top: 32px;
+  }
+
+ &__timing {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #FFA5BA;
+ }
+
+  &__text {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 183%;
+    color: #907e82;
+  } 
+  
 }
 
-.contact-nav__link {
-  font-size: 16px;
-  line-height: 183%;
-  color: #907e82;
-}
 // Секция с кнопками/////////////
 .button {
   display: flex;
@@ -75,42 +96,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-//   стрелочка свг
-  &__arrow {
-    margin-left: 13px;
- 
-          &::after {
-            border: 2px solid #ffffff;
-            fill: #ffffff;
-            justify-content: center;
-          }
-    
-  }
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 
   &--red {
     background: #d41342;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    margin-right: 12px;
-   
     color: #ffffff;
-    
+    margin-right: 12px; 
 
-    &::after {
-      border: 2px solid #D41443;
-      fill: #D41443;
-      justify-content: center;
+    &:hover,
+    &:focus {
+      background: var(--mob-menu-color);
+      color: #ffffff;
     }
   }
 
   &--white {
     background: rgba(255, 245, 246, 1);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    justify-content: center;
     color: #d41443;
+
+     &:hover,
+    &:focus {
+      background: #ECEBEB;
+      color: #d41443;
+    }
+  }
+}
+
+
+
+.btn__arrow {
+  margin-left: 13px;
+
+  &--light {
+    color: #ffffff;
+  }
+
+  &__arrow--red {
+    color: #d41342;
   }
 }
