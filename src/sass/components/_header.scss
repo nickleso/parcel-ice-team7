@@ -6,8 +6,11 @@ button {
 .page-header {
   position: relative;
   background-color: var(--secondary-bcg);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 502px;
+  // margin-left: auto;
+  // margin-right: auto;
   @media (max-width: 767.98px) {
     padding-left: 20px;
     padding-top: 8px;
@@ -16,10 +19,12 @@ button {
   @media (min-width: 768px) {
     padding: 32px 32px 0 32px;
     width: 768px;
+    height: 416px;
   }
   @media (min-width: 1200px) {
     padding: 32px 16px 0 16px;
     width: 1200px;
+    height: 664px;
   }
 }
 
@@ -33,6 +38,7 @@ button {
   stroke: var(--accent-color);
   border: none;
   padding: 15px 20px;
+  z-index: 7;
 
   @media (min-width: 768px) {
     display: block;
@@ -115,6 +121,8 @@ button {
   @media (min-width: 1200px) {
     &__list {
       display: flex;
+      margin: 0;
+      padding-left: 0;
 
       :not(:last-child) {
         margin-right: 35px;
@@ -126,6 +134,7 @@ button {
     display: flex;
     height: 42px;
     align-items: center;
+    z-index: 5;
     @media (max-width: 1199.98px) {
       border-bottom: 1px solid #e18298;
 
@@ -140,6 +149,7 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+    text-decoration: none;
     transition: color 250ms var(--cubic);
 
     &:hover,
