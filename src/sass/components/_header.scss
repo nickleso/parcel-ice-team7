@@ -191,7 +191,7 @@ button {
 
     overflow-y: scroll;
     transform: translateX(100%);
-    opacity: 0;
+    visibility: hidden;
     transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
 
     @media (min-width: 768px) {
@@ -207,7 +207,7 @@ button {
 }
 
 .menu-container.is-open {
-  opacity: 1;
+  visibility: visible;
   transform: translateX(0);
 
   background-color: #e17992;
