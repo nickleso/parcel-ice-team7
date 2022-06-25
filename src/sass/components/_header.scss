@@ -9,8 +9,7 @@ button {
   margin: 0 auto;
   overflow: hidden;
   height: 502px;
-  // margin-left: auto;
-  // margin-right: auto;
+
   @media (max-width: 767.98px) {
     padding-left: 20px;
     padding-top: 8px;
@@ -97,25 +96,37 @@ button {
     height: 44px;
   }
   &__icon {
-    margin-left: 14px;
-  }
-
-  &__big-screen {
-    @media (max-width: 767.98px) {
-      display: none;
-    }
-    width: 160px;
-    height: 44px;
-    margin: 0;
-    &__icon {
+    margin-left: 27px;
+    @media (min-width: 768px) {
+      margin-left: 21px;
     }
   }
 }
 
-// .buy-button__icon {
-//   width: 10px;
-//   height: 10px;
-// }
+.buy-button__big-screen {
+  width: 160px;
+  height: 44px;
+  margin: 0;
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+  .buy-button__icon {
+    @media (min-width: 768px) {
+      margin-left: 13.5px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-button__icon--tab {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .buy-button__icon--mob {
+    display: none;
+  }
+}
 
 .site-nav {
   @media (min-width: 1200px) {
@@ -178,9 +189,9 @@ button {
     padding: 60px 20px;
     background-color: var(--mob-menu-color);
 
-    overflow: scroll;
+    overflow-y: scroll;
     transform: translateX(100%);
-    opacity: 0;
+    visibility: hidden;
     transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
 
     @media (min-width: 768px) {
@@ -196,7 +207,7 @@ button {
 }
 
 .menu-container.is-open {
-  opacity: 1;
+  visibility: visible;
   transform: translateX(0);
 
   background-color: #e17992;
