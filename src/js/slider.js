@@ -1,0 +1,6 @@
+$(function() {
+  $('.rev-slider').slick({
+ 
+})
+
+})
