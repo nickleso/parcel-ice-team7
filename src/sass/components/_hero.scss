@@ -1,6 +1,5 @@
 h1,
 h2,
-h3,
 p,
 ul {
   margin: 0;
@@ -21,6 +20,7 @@ a {
   // max-width: 480px;
   background-color: var(--secondary-bcg);
   overflow: hidden;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     height: 416px;
