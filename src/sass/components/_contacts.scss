@@ -1,3 +1,4 @@
+// Секция с боксами /////////////////////////
 .contact-list {
   display: flex;
   margin-bottom: 60px;
@@ -15,7 +16,7 @@
       margin-right: 32px;
     }
   }
-
+// Зежим работы////////////////////////
   &__mode {
     font-size: 16px;
     line-height: 186%;
@@ -60,7 +61,7 @@
   line-height: 183%;
   color: #907e82;
 }
-
+// Секция с кнопками/////////////
 .button {
   display: flex;
   justify-content: center;
@@ -74,6 +75,10 @@
   align-items: center;
   justify-content: center;
 
+  &__arrow {
+    margin-left: 13px;
+  }
+
   &--red {
     background: #d41342;
     font-weight: 700;
@@ -83,7 +88,7 @@
     color: #ffffff;
 
     &::after {
-      margin-right: 13.6px;
+      
       fill: #ffffff;
       justify-content: center;
     }
