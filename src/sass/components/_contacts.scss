@@ -3,6 +3,19 @@
   display: flex;
   margin-bottom: 60px;
 
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    flex-direction: row;
+  }
+
+ 
+  
+
   &__item {
     width: 368px;
     height: 538px;
@@ -12,14 +25,33 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
-    &:not(:last-child) {
-      margin-right: 32px;
+     &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+    @media screen and (min-width: 320px) {
+      width: 100%;
+      padding: 40 32;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
     }
+
+    @media screen and (min-width: 768px) {
+      width: 224px;
+      padding: 40 32;
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+
+    
   }
 
   &__title {
     width: 75px;
-    height: 28px;
+
     font-size: 16px;
     line-height: 186%;
     margin-bottom: 32px;
@@ -36,17 +68,54 @@
       background-color: var(--shake-color);
       width: 138px;
     }
+
+    @media screen and (min-width: 320px) {
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 1.83;
+    }
+
+    @media screen and (min-width: 768px) {
+       margin-bottom: 32px;
+    }
+
+   
   }
 
   &--city {
     width: 250px;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
+
+    @media screen and (min-width: 320px) {
+      width: 216px;
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 160px;
+      padding-bottom: 32px;
+    }
+
+    
   }
 
   &--mode {
     padding-top: 32px;
-    padding-bottom: 6px;
+
+    @media screen and (min-width: 320px) {
+      padding-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+    }
+
+    
   }
 
   &--holiday {
@@ -54,17 +123,54 @@
     padding-top: 6px;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
+
+    @media screen and (min-width: 320px) {
+      width: 216px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 160px;
+      padding-bottom: 32px;
+    }
+
+    
   }
 
   &--navigation {
     padding-top: 32px;
   }
 
- &__timing {
-  font-size: 16px;
-  line-height: 1.87;
-  color: #FFA5BA;
- }
+  &__timing {
+    font-size: 16px;
+    line-height: 1.87;
+    color: #ffa5ba;
+
+    @media screen and (min-width: 320px) {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    
+  }
+
+  &__subtitle {
+    @media screen and (min-width: 320px) {
+      font-size: 15px;
+      line-height: 1.83;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+
+    
+  }
 
   &__text {
     margin-top: 8px;
@@ -72,20 +178,55 @@
     line-height: 183%;
     letter-spacing: 0.04em;
     color: #907e82;
+
+    @media screen and (min-width: 320px) {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 158px;
+      font-size: 14px;
+      line-height: 1.64;
+    }
+
   }
 
   &__link {
     font-size: 16px;
     line-height: 183%;
     color: #907e82;
-  } 
-  
+
+    @media screen and (min-width: 320px) {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+   
+  }
 }
 
 // Секция с кнопками/////////////
 .button {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: initial;
+  }
+
+  
 }
 
 // Кнопка
@@ -100,10 +241,32 @@
   font-size: 16px;
   line-height: 1.31;
 
+  @media screen and (min-width: 320px) {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    
+  }
+
+  
+
   &--red {
     background: #d41342;
     color: #ffffff;
-    margin-right: 12px; 
+
+    @media screen and (min-width: 320px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+         margin-bottom: 0px;
+         margin-right: 15px;
+    }
+
+  
 
     &:hover,
     &:focus {
@@ -116,15 +279,13 @@
     background: rgba(255, 245, 246, 1);
     color: #d41443;
 
-     &:hover,
+    &:hover,
     &:focus {
-      background: #ECEBEB;
+      background: #ecebeb;
       color: #d41443;
     }
   }
 }
-
-
 
 .btn__arrow {
   margin-left: 13px;
@@ -137,3 +298,15 @@
     color: #d41342;
   }
 }
+
+// @media screen and (min-width: 320px) {
+
+//   }
+
+//   @media screen and (min-width: 768px) {
+
+//   }
+
+//   @media screen and (min-width: 1200px) {
+
+//   }
