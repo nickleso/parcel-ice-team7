@@ -38,6 +38,11 @@ button {
   border: none;
   padding: 15px 20px;
   z-index: 7;
+  transition: transform 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
   @media (min-width: 768px) {
     display: block;
@@ -79,7 +84,7 @@ button {
   transition: background-color 250ms var(--cubic);
 
   font-weight: 700;
-  font-size: 16px;
+
   line-height: 1.31;
   color: var(--accent-color);
   margin-bottom: 19px;
@@ -192,7 +197,7 @@ button {
     overflow-y: scroll;
     transform: translateX(100%);
     visibility: hidden;
-    transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+    transition: transform 250ms var(--cubic);
 
     @media (min-width: 768px) {
       width: 254px;
@@ -209,7 +214,6 @@ button {
 .menu-container.is-open {
   visibility: visible;
   transform: translateX(0);
-
   background-color: #e17992;
 }
 

@@ -20,11 +20,11 @@
   &__title {
     width: 75px;
     height: 28px;
-    font-size: 16px;
+
     line-height: 186%;
     margin-bottom: 32px;
     text-align: center;
-    letter-spacing: 0.04em;
+
     border-radius: 5px;
     background-color: var(--coffee-color);
     color: #ffffff;
@@ -60,26 +60,23 @@
     padding-top: 32px;
   }
 
- &__timing {
-  font-size: 16px;
-  line-height: 1.87;
-  color: #FFA5BA;
- }
+  &__timing {
+    line-height: 1.87;
+    color: #ffa5ba;
+  }
 
   &__text {
     margin-top: 8px;
-    font-size: 16px;
+
     line-height: 183%;
-    letter-spacing: 0.04em;
+
     color: #907e82;
   }
 
   &__link {
-    font-size: 16px;
     line-height: 183%;
     color: #907e82;
-  } 
-  
+  }
 }
 
 // Секция с кнопками/////////////
@@ -97,7 +94,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 16px;
+
   line-height: 1.31;
 
   &--red {
