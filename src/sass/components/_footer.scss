@@ -66,7 +66,7 @@
         width: 320px;
         height: 1px;
         bottom: 61px;
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: 768px;
             bottom: 42px;
         }
@@ -90,6 +90,10 @@
         &:not(:last-child) {
             margin-right: 28.24px;
         }
+    }
+    &__link {
+        @extend %linkStyles;
+        @extend %transitionFillStyles;
     }
     
     &__link:hover,
