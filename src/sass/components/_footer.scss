@@ -1,25 +1,34 @@
 .page-footer {
     position: relative;
+    background-color: var(--primary-gradient);
     // padding-top: 10px;
-    // @media screen and (min-width: 768px) {
-    //         padding-left: 16px;
-    //         padding-right: 16px;
-    //
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
     &__subtitle {
         margin-bottom: 16px;
+        @media screen and (min-width: 768px) {
+                margin-bottom: 12px;
+            }
         text-align: left;
     }
 
     &__title {
         width: 200px;
-        margin-bottom: 40px;
+        
         text-align: left;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 40px;
+        }
     }
 }
 
 .page-footer__text {
-    
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 12px;
@@ -33,6 +42,19 @@
         line-height: 1.5;    
         text-align: center;
         color: var(--secondary-text);
+
+        @media screen and (min-width: 768px) {
+            margin-top: 48px;
+            margin-bottom: 8px;
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+        }
+        
+        @media screen and (max-width: 767.98px) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 160px;
+        }
     }
     &--axent {
         color: var(--accent-color);
@@ -44,6 +66,10 @@
         width: 320px;
         height: 1px;
         bottom: 61px;
+        @media screen and (max-width: 768px) {
+            width: 768px;
+            bottom: 42px;
+        }
         left: 0;
         background: var(--pseudo-color);
     }
@@ -70,4 +96,17 @@
     &__link:focus {
         --social-color1: var(--accent-color);
     } 
+}
+
+.container-title {
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        margin-right: 128px;
+    }
+}
+.container-socials {
+    @media screen and (min-width: 768px) {
+        text-align: right;
+        padding-top: 60px;
+    }
 }
