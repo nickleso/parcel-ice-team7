@@ -1,17 +1,22 @@
-<div class="rev-slider container">
-    <h2 class="rev-slider__title visually-hidden">reviews</h2>
-    <img
-      class="rev-slider__photo"
-      src="/src/images/Reviews/testimonials.svg"
-      alt="testimonials"
-    
-    />
-    <p class="rev-slider__text">
-      Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-      sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
-      nibh vel risus.
-    </p>
-    <h3 class="rev-slider__name">Emily, Los Angeles</h3>
+<section class="rev-slider section ">
+  <h2 class="rev-slider__title visually-hidden">reviews</h2>
+  <img
+    srcset="
+      /src/images/Reviews/testimonials.webp     85w,
+      /src/images/Reviews/testimonials@2x.webp 170w
+    "
+    class="rev-slider__photo"
+    src="/src/images/Reviews/testimonials.webp"
+    alt="testimonials"
+    sizes="(min-width: 1200px) 85px, (min-width: 768px) 85px, (max-width: 767px) 85px, 100vw"
+  />
   
-</div>
-
+    <p class="rev-slider__text icon">
+    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+    sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
+    nibh vel risus.
+  </p>
+  
+  <h3 class="rev-slider__name icon-el">Emily, Los Angeles</h3>
+</section>
+  

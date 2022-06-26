@@ -11,22 +11,111 @@
 }
 
 .rev-slider__text {
-  width: 968px;
-  padding: 47px 109px 39px 109px;
-  background-color: #fafafa;
+  @media screen and (max-width: 767px) {
+    width: 180px;
+
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px,
+      #fafafa 31px,
+      #fafafa 61px,
+      #e1e1e1 61px,
+      #e1e1e1 62px
+    );
+    
+    font-size: 12px;
+    line-height: 2.55;
+  }
+  @media screen and (max-width: 767px) {
+    width: 180px;
+
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px,
+      #fafafa 31px,
+      #fafafa 58px,
+      #e1e1e1 58px,
+      #e1e1e1 59px
+    );
+    
+    font-size: 12px;
+    line-height: 2.55;
+  }@media screen and (min-width: 768px) {
+    width: 608px;
+
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px,
+      #fafafa 31px,
+      #fafafa 58px,
+      #e1e1e1 58px,
+      #e1e1e1 59px
+    );
+    
+    font-size: 12px;
+    line-height: 2.55;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 821px;
+
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 30px,
+      #e1e1e1 30px,
+      #e1e1e1 31px,
+      #fafafa 31px,
+      #fafafa 58px,
+      #e1e1e1 58px,
+      #e1e1e1 59px
+    );
+    
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  margin-bottom: 36px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 36px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
   text-align: center;
-
   letter-spacing: 0.04em;
-
   color: var(--primary-text);
 }
 
+.rev-slider__text::before {
+  position: relative;
+  top: 50%;
+  left: 0;
+
+  content: '';
+  height: 54px;
+  color: var(--pseudo-color);
+  display: block;
+  background-repeat: no-repeat;
+}
+.icon::before {
+  background-image: url(/src/images/Reviews/“.svg);
+}
+
+.rev-slider__name::before {
+  position: relative;
+  left: 50%;
+  content: '';
+  height: 4px;
+  color: #c7133e;
+  display: block;
+  background-repeat: no-repeat;
+  margin-top: 16px;
+}
+.icon-el::before {
+  background-image: url(/src/images/Reviews/Ellipse.svg);
+}
 
 .rev-slider__name {
   font-weight: 500;
