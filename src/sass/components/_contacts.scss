@@ -25,6 +25,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
+
      &:not(:last-child) {
         margin-right: 32px;
       }
@@ -47,16 +48,20 @@
     }
 
     
-  }
 
   &__title {
     width: 75px;
+
 
     font-size: 16px;
     line-height: 186%;
     margin-bottom: 32px;
     text-align: center;
     letter-spacing: 0.04em;
+
+    height: 28px;
+
+   
     border-radius: 5px;
     background-color: var(--coffee-color);
     color: #ffffff;
@@ -67,6 +72,7 @@
     &--food {
       background-color: var(--shake-color);
       width: 138px;
+
     }
 
     @media screen and (min-width: 320px) {
@@ -80,6 +86,7 @@
 
     @media screen and (min-width: 768px) {
        margin-bottom: 32px;
+
     }
 
    
@@ -89,6 +96,7 @@
     width: 250px;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
+
 
     @media screen and (min-width: 320px) {
       width: 216px;
@@ -100,11 +108,11 @@
       padding-bottom: 32px;
     }
 
-    
   }
 
   &--mode {
     padding-top: 32px;
+
 
     @media screen and (min-width: 320px) {
       padding-top: 24px;
@@ -115,7 +123,7 @@
       padding-top: 32px;
     }
 
-    
+
   }
 
   &--holiday {
@@ -123,6 +131,7 @@
     padding-top: 6px;
     padding-bottom: 32px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
+
 
     @media screen and (min-width: 320px) {
       width: 216px;
@@ -133,7 +142,7 @@
       padding-bottom: 32px;
     }
 
-    
+
   }
 
   &--navigation {
@@ -141,6 +150,7 @@
   }
 
   &__timing {
+
     font-size: 16px;
     line-height: 1.87;
     color: #ffa5ba;
@@ -170,10 +180,12 @@
     }
 
     
+
   }
 
   &__text {
     margin-top: 8px;
+
     font-size: 16px;
     line-height: 183%;
     letter-spacing: 0.04em;
@@ -209,6 +221,7 @@
     }
 
    
+
   }
 }
 
@@ -238,6 +251,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
+
   font-size: 16px;
   line-height: 1.31;
 
@@ -251,11 +265,13 @@
     
   }
 
+
   
 
   &--red {
     background: #d41342;
     color: #ffffff;
+
 
     @media screen and (min-width: 320px) {
       margin-bottom: 10px;
@@ -273,6 +289,7 @@
       background: var(--mob-menu-color);
       color: #ffffff;
     }
+
   }
 
   &--white {
@@ -299,6 +316,7 @@
   }
 }
 
+
 // @media screen and (min-width: 320px) {
 
 //   }
@@ -310,3 +328,4 @@
 //   @media screen and (min-width: 1200px) {
 
 //   }
+

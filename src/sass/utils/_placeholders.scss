@@ -16,3 +16,16 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+// link styles - can use, but in progress
+%transitionColorStyles {
+  transition: color 250ms var(--cubic);
+}
+
+%transitionFillStyles {
+  transition: fill 250ms var(--cubic);
+}
+
+%transitionStrokeStyles {
+  transition: stroke 250ms var(--cubic);
+}
