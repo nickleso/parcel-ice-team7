@@ -8,12 +8,10 @@
         alt="ice cream picture"
       />
     </a>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container modal" id="mobile-menu" data-modal="1">
       <button
-        class="menu-button close-button js-close-menu"
-        aria-expanded="false"
+        class="menu-button close-button js-modal-close"
         aria-controls="mobile-menu"
-        data-menu-button
       >
         <svg width="14px" height="14px" aria-label="mobile menu trigger">
           <use
@@ -22,7 +20,7 @@
           ></use>
         </svg>
       </button>
-      <button class="buy-button">
+      <button class="buy-button js-open-modal" data-modal="2">
         Buy now
         <svg class="buy-button__icon" width="10px" height="10px">
           <use
@@ -57,17 +55,19 @@
     </div>
 
     <button
-      class="menu-button js-open-menu"
-      aria-expanded="false"
+      class="menu-button js-open-modal"
       aria-controls="mobile-menu"
-      data-menu-button
+      data-modal="1"
     >
       <svg width="20px" height="12px" aria-label="mobile menu trigger">
         <use class="icon-menu" href="./images/icons-sprite.svg#icon-menu"></use>
       </svg>
     </button>
 
-    <button class="buy-button buy-button__big-screen">
+    <button
+      class="buy-button buy-button__big-screen js-open-modal"
+      data-modal="2"
+    >
       Buy now
       <svg class="buy-button__icon" width="10px" height="10px">
         <use href="./images/icons-sprite.svg#icon-arrowmain"></use>
