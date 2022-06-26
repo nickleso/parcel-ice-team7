@@ -1,10 +1,27 @@
-.container.about{
+.section{
     background-color: var(--primary-gradient);
-    
 }
 
 
 .content{
+
+    @media screen and (min-width: 1200px){
+            background-image: url('../images/about/background/bg-milk-desktop.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+        
+    @media screen and (max-width: 767px){
+            background-image: url('../images/about/background/bg-milk-mob.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            // background-size: auto;
+    
+        }
+
+
+
     @media screen and (min-width: 768px) {
             display: flex;
             justify-content: center;
@@ -33,6 +50,8 @@
 
 .about{
 
+    
+    
     &__primary-text{
         width: 220px;
         font-size: 12px;
@@ -74,7 +93,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    // display: flex;
     align-items: center;
     text-align: center;
     
@@ -84,6 +102,13 @@
 
 
     background-color: var(--primary-btn);
-    
+    border: none;
     border-radius: 22px;
+
+    transition: background-color 300ms var(--cubic);
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus{
+    background-color:var(--hover-btn-primary);
 }
