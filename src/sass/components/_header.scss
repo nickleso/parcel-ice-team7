@@ -38,6 +38,11 @@ button {
   border: none;
   padding: 15px 20px;
   z-index: 7;
+  transition: transform 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
   @media (min-width: 768px) {
     display: block;
@@ -192,7 +197,7 @@ button {
     overflow-y: scroll;
     transform: translateX(100%);
     visibility: hidden;
-    transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+    transition: transform 250ms var(--cubic);
 
     @media (min-width: 768px) {
       width: 254px;
