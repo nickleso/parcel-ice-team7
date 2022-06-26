@@ -24,7 +24,7 @@
       #e1e1e1 61px,
       #e1e1e1 62px
     );
-    
+
     font-size: 12px;
     line-height: 2.55;
   }
@@ -41,10 +41,11 @@
       #e1e1e1 58px,
       #e1e1e1 59px
     );
-    
+
     font-size: 12px;
     line-height: 2.55;
-  }@media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
     width: 608px;
 
     background: repeating-linear-gradient(
@@ -57,7 +58,7 @@
       #e1e1e1 58px,
       #e1e1e1 59px
     );
-    
+
     font-size: 12px;
     line-height: 2.55;
   }
@@ -74,7 +75,7 @@
       #e1e1e1 58px,
       #e1e1e1 59px
     );
-    
+
     font-size: 16px;
     line-height: 1.86;
   }
@@ -82,7 +83,7 @@
   margin-bottom: 36px;
   margin-left: auto;
   margin-right: auto;
-  
+
   color: var(--primary-text);
 }
 
@@ -115,15 +116,13 @@
   background-image: url(/src/images/Reviews/Ellipse.svg);
 }
 
+//   margin-bottom: 36px;
 
-  margin-bottom: 36px;
+//   line-height: 1.86;
+//   text-align: center;
 
-  line-height: 1.86;
-  text-align: center;
-
-  color: var(--primary-text);
-}
-
+//   color: var(--primary-text);
+// }
 
 .rev-slider__name {
   font-size: 20px;
