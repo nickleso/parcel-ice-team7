@@ -1,5 +1,5 @@
-.section {
-  padding-top: 60px;
+.container.products {
+  background-color: var(--primary-bcg);
 }
 
 .products__label {
@@ -12,7 +12,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: var(--pink-color);
 
   margin-bottom: 15px;
 
@@ -34,11 +34,12 @@
   font-weight: 400;
   font-size: 34px;
   line-height: 1.14;
+
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--accent-color);
 
   @media screen and(min-width: 768px) {
     font-size: 48px;
@@ -60,36 +61,70 @@
   }
 }
 
-.products__item-cream {
+.products__item-cream,
+.products__item-coffee,
+.products__item-milk {
   position: relative;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
   margin-top: 140px;
   padding-bottom: 40px;
 
   width: 280px;
-  background: #ffb8ca;
+
   border-radius: 24px;
+}
+
+.products__item-cream {
+  background: var(--secondary-bcg);
 
   &::before {
-    content: url('../images/products/cream-mob.png');
+    content: '';
+    background-image: url('../images/products/cream-mob.png');
+    background-size: contain;
+
+    @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+      background-image: url('../images/products/cream-mob@2x.png');
+    }
 
     position: absolute;
+
+    width: 280px;
+    height: 280px;
 
     top: -140px;
     left: 0;
 
     @media screen and(min-width: 768px) {
-      content: url('../images/products/cream-tab.png');
+      content: '';
+      background-image: url('../images/products/cream-tab.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/cream-tab@2x.png');
+      }
+
+      width: 224px;
+      height: 224px;
 
       left: 0;
     }
 
     @media screen and(min-width: 1200px) {
-      content: url('../images/products/cream-des.png');
+      content: '';
+      background-image: url('../images/products/cream-des.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/cream-des@2x.png');
+      }
+
+      width: 368px;
+      height: 394px;
+
       top: -265px;
       left: 0;
     }
@@ -109,21 +144,17 @@
 }
 
 .products__item-coffee {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  margin-top: 140px;
-  padding-bottom: 40px;
-
-  width: 280px;
-  background: #f0d1a5;
-  border-radius: 24px;
+  background: var(--coffee-color);
 
   &::before {
-    content: url('../images/products/coffee-mob.png');
+    content: '';
+    background-image: url('../images/products/coffee-mob.png');
+    background-size: contain;
+
+    @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+      background-image: url('../images/products/coffee-mob@2x.png');
+    }
 
     position: absolute;
 
@@ -133,13 +164,32 @@
     top: -140px;
 
     @media screen and(min-width: 768px) {
-      content: url('../images/products/coffee-tab.png');
+      content: '';
+      background-image: url('../images/products/coffee-tab.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/coffee-tab@2x.png');
+      }
+
+      width: 224px;
+      height: 224px;
 
       left: 0;
     }
 
     @media screen and(min-width: 1200px) {
-      content: url('../images/products/coffee-des.png');
+      content: '';
+      background-image: url('../images/products/coffee-des.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/coffee-des@2x.png');
+      }
+
+      width: 368px;
+      height: 394px;
+
       top: -265px;
       left: 0;
     }
@@ -159,21 +209,17 @@
 }
 
 .products__item-milk {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  margin-top: 140px;
-  padding-bottom: 40px;
-
-  width: 280px;
-  background: #c2e297;
-  border-radius: 24px;
+  background: var(--shake-color);
 
   &::before {
-    content: url('../images/products/milk-mob.png');
+    content: '';
+    background-image: url('../images/products/milk-mob.png');
+    background-size: contain;
+
+    @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi) {
+      background-image: url('../images/products/milk-mob@2x.png');
+    }
 
     position: absolute;
 
@@ -183,13 +229,32 @@
     top: -140px;
 
     @media screen and(min-width: 768px) {
-      content: url('../images/products/milk-tab.png');
+      content: '';
+      background-image: url('../images/products/milk-tab.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/milk-tab@2x.png');
+      }
+
+      width: 224px;
+      height: 224px;
 
       left: 0;
     }
 
     @media screen and(min-width: 1200px) {
-      content: url('../images/products/milk-des.png');
+      content: '';
+      background-image: url('../images/products/milk-des.png');
+
+      @media only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/products/milk-des@2x.png');
+      }
+
+      width: 368px;
+      height: 394px;
+
       top: -265px;
       left: 0;
     }
@@ -218,7 +283,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--header-hero-text);
 
   padding-top: 160px;
   margin-bottom: 70px;
@@ -254,6 +319,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 200px;
 
   @media screen and(min-width: 768px) {
@@ -278,7 +344,7 @@
 
   margin-bottom: 32px;
 
-  color: #ffffff;
+  color: var(--header-hero-text);
 
   height: 124px;
   overflow: hidden;
