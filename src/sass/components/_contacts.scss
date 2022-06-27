@@ -119,7 +119,7 @@
     }
 
     &--mode {
-      padding-top: 24 0 8 0;
+      padding: 24 0 8 0;
     }
 
     &--holiday {
@@ -224,6 +224,13 @@
   font-size: 12px;
   line-height: 1.83;
   color: #907e82;
+  transition: color 250ms var(--cubic);
+
+        &:hover,
+        &:focus {
+          color: #d41443;
+          transition: color 250ms var(--cubic);
+        }
 
   @media screen and (min-width: 768px) {
     font-size: 11px;
