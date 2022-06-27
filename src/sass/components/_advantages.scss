@@ -1,5 +1,5 @@
 .section-advantages {
-  // background-color: var(--primary-gradient);
+  background-color: var(--primary-gradient);
 
   @media screen and (max-width: 767px) {
     padding-top: 10px;
@@ -17,9 +17,9 @@
   // }
 }
 
-.advantages-container {
-  background-color: var(--primary-gradient);
-}
+// .advantages-container {
+//   background-color: var(--primary-gradient);
+// }
 
 .advantages__list {
   @media screen and (min-width: 768px) {
