@@ -128,7 +128,7 @@
   // background-repeat: no-repeat;
 }
 .icon::after {
-  background-image: url(/src/images/reviews/“.svg);
+  background-image: url(../images/reviews/“.svg);
 }
 
 .rev-slider__name {
@@ -162,7 +162,7 @@
 }
 
 .icon-el::before {
-  background-image: url(/src/images/reviews/rev.svg);
+  background-image: url(../images/reviews/rev.svg);
 }
 
 .rev-slider__name::after {
@@ -181,5 +181,5 @@
 }
 
 .icon-el::after {
-  background-image: url(/src/images/reviews/dots.svg);
+  background-image: url(../images/reviews/dots.svg);
 }
