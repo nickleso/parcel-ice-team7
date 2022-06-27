@@ -348,7 +348,7 @@
 
   height: 124px;
   overflow: hidden;
-  transition: height 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 350ms var(--cubic);
 
   @media screen and(min-width: 1200px) {
     font-size: 16px;
@@ -362,9 +362,9 @@
 }
 
 .open {
-  height: 200px;
+  height: 220px;
 
   @media screen and(min-width: 768px) {
-    height: 230px;
+    height: 250px;
   }
 }
