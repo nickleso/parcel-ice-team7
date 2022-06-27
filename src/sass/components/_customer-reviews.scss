@@ -23,6 +23,7 @@
   @media screen and (min-width: 1200px) {
     padding: 47px 109px 31px 109px;
   }
+  margin-bottom: 36px;
 }
 
 .container__grad {
@@ -84,7 +85,6 @@
   @media screen and (max-width: 767px) {
     top: 10%;
     left: 19%;
-    // transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 768px) {
     top: 15%;
@@ -106,24 +106,48 @@
   background-image: url(/src/images/Reviews/“.svg);
 }
 
-.rev-slider__name::before {
-  position: relative;
-  left: 50%;
-  content: '';
-  height: 4px;
-  color: #c7133e;
-  display: block;
-  background-repeat: no-repeat;
-  margin-top: 16px;
-}
-.icon-el::before {
-  background-image: url(/src/images/Reviews/Ellipse.svg);
-}
-
 .rev-slider__name {
+  position: relative;
   font-size: 20px;
   line-height: 1.86;
   text-align: center;
-
   color: var(--primary-text);
+  margin-bottom: 32px;
 }
+.rev-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rev-slider__name::before {
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  content: '';
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.icon-el::before {
+  background-image: url(/src/images/Reviews/rev.svg);
+}
+
+.rev-slider__name::after {
+  position: absolute;
+  left: 50%;
+  top: 62px;
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.icon-el::after {
+  background-image: url(/src/images/Reviews/dots.svg);
+}
+
+
+
