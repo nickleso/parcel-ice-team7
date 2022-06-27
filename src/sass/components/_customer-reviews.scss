@@ -108,17 +108,21 @@
   position: absolute;
   top: -14px;
   left: -6px;
+  width: 54px;
 
   @media screen and (min-width: 768px) {
-    left: 5px;
+    left: 10px;
+    width: 60px;
+    background-size: cover;
   }
   @media screen and (min-width: 1200px) {
     left: -4px;
+    width: 54px;
   }
   content: '';
   z-index: 0;
   height: 40px;
-  width: 54px;
+
   color: var(--pseudo-color);
   display: block;
   // background-repeat: no-repeat;
