@@ -97,7 +97,7 @@
 
   content: '';
   height: 100%;
-  width: 100%;
+  width: 54px;
   color: var(--pseudo-color);
   display: block;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@
   top: -16px;
   content: '';
   height: 4px;
-  width: 100%;
+  width: 32px;
   display: block;
   background-repeat: no-repeat;
 }
@@ -136,18 +136,16 @@
 
 .rev-slider__name::after {
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 62px;
   content: '';
   height: 100%;
-  width: 100%;
+  width: 72px;
   display: block;
   background-repeat: no-repeat;
+  transform: translate(50% 50%);
 }
 
 .icon-el::after {
   background-image: url(/src/images/Reviews/dots.svg);
 }
-
-
-
