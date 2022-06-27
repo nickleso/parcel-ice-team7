@@ -3,7 +3,7 @@
   margin-right: auto;
   max-width: 1200px;
   background-color: var(--primary-gradient);
-  
+
   @media screen and (max-width: 767px) {
     max-width: 280px;
     height: auto;
@@ -12,14 +12,14 @@
     background-repeat: no-repeat;
     background-position: 70% 70%;
     background-size: contain;
-    
+
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/about/background/bg-milk-mob@2x.png');
     }
   }
-  
+
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     height: auto;
@@ -28,26 +28,26 @@
     background-repeat: no-repeat;
     background-position: 70% 70%;
     background-size: contain;
-    
+
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/about/background/bg-milk-desktop@2x.png');
     }
   }
 }
 
-.content{
+.content {
   @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .img {
@@ -122,6 +122,4 @@
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: var(--hover-btn-primary);
-
-
 }
