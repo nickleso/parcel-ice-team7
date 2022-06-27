@@ -1,17 +1,9 @@
-// .section {
-//   background-color: var(--primary-gradient);
-// }
-
-// .section-about {
-// }
-
-.content {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+.section-about {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-color: var(--primary-gradient);
+  
   @media screen and (max-width: 767px) {
     max-width: 280px;
     height: auto;
@@ -20,14 +12,14 @@
     background-repeat: no-repeat;
     background-position: 70% 70%;
     background-size: contain;
-
+    
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/about/background/bg-milk-mob@2x.png');
     }
   }
-
+  
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     height: auto;
@@ -36,22 +28,31 @@
     background-repeat: no-repeat;
     background-position: 70% 70%;
     background-size: contain;
-
+    
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url('../images/about/background/bg-milk-desktop@2x.png');
     }
   }
 }
-// .section-heading {
-//   margin-bottom: 32px;
-// }
 
-.content-img {
+.content{
+  @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.img {
   width: 280px;
   margin-bottom: 40px;
-
   @media screen and (min-width: 767px) {
     width: 336px;
     margin-right: 32px;
@@ -72,7 +73,7 @@
 
     color: var(--primary-text);
     margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       width: 334px;
     }
     @media screen and (min-width: 1200px) {
@@ -88,7 +89,7 @@
     color: var(--secondary-text);
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       width: 334px;
     }
     @media screen and (min-width: 1200px) {
@@ -98,6 +99,9 @@
 }
 
 .secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -108,7 +112,7 @@
   width: 176px;
   height: 44px;
 
-  background-color: var(--primary-btn);
+  background-color: var(--primary-bcg);
   border: none;
   border-radius: 22px;
 
@@ -118,4 +122,6 @@
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: var(--hover-btn-primary);
+
+
 }
