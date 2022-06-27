@@ -326,13 +326,24 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    padding: 0 20 20 16;
+    text-align: center;
+    padding: 0 20 20 10;
     background-color: #ecebeb;
     border-radius: 10px;
     min-width: 160px;
-    overflow: auto;
+    // overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
+    @media screen and (min-width: 768px) {
+    min-width: 190px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 198px;
+    
+  }
+    
 
     
 }
@@ -342,6 +353,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    align-content: center;
+    transition:  250ms var(--cubic);
 }
 
 .dropdown a:hover {
@@ -358,11 +371,13 @@ font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     transition: color 250ms var(--cubic);
+    transition-property: transform 250ms var(--cubic);
 
     &:hover,
     &:focus {
       color: #000000;
       transition: color 250ms var(--cubic);
-      
-    }
+      transition-property: transform 250ms var(--cubic);
+       transform: scale(1.3);        
+   }
 }
