@@ -17,8 +17,10 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -27,6 +29,7 @@ img {
   height: auto;
 }
 
+li,
 .list {
   list-style: none;
   padding: 0;
