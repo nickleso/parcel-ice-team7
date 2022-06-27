@@ -4,7 +4,7 @@
 
   <div class="container">
     
-    <div class="contact-box">
+    
     <ul class="contact-list list">
       <li class="contact-list__item">  
         <p class="contact-list__title">CAFE</p>
@@ -101,13 +101,23 @@
 
     <ul class="button list">
       <li>
-        <a class="btn btn--red link map" target="_blank" href="https://goo.gl/maps/LUEGGQbdnjC8iEGa6" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          >Our Locations
-          <svg class="btn__arrow btn__arrow--light" width="8" height="10">
-            <use href="./images/icons-sprite.svg#arrow-light"></use>
-          </svg>
+
+        <a>
+          
+           <button onclick="myFunction()" class="btn btn--red">Our Locations <svg class="btn__arrow btn__arrow--light" width="8" height="10">
+              <use href="./images/icons-sprite.svg#arrow-light"></use>
+              </svg></button>
+             <div id="myDropdown" class="dropdown-content">   
+                <a class="city" target="_blank" href="https://goo.gl/maps/tW8bSRx6J3Gr1xKQ8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >Chicago</a>                
+                <a class="city" target="_blank" href="https://goo.gl/maps/HPLUA5pcxL6z7Lo18" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >Los Angeles</a>
+                <a class="city" target="_blank" href="https://goo.gl/maps/LUEGGQbdnjC8iEGa6" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >New York</a>
+             </div>
+                  
         </a>
-      </li>  
+
+      </li>          
+
+      
 
       <li>
         <a class="btn btn--white link" href="index.html"
@@ -119,6 +129,29 @@
       </li>       
     </ul>  
     </div> 
+
+    <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) { 
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
         
 </section>   
  

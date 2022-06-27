@@ -1,19 +1,4 @@
-// .contact-box {
 
-//      width: 100%;
-//       height: 100%;
-//       background: #FFF5F6;
-
-//      @media screen and (min-width: 768px) {
-//       width: 100%;
-//       height: 100%;
-//       }
-
-//       @media screen and (min-width: 1200px) {
-//       width: 100%;
-//       height: 100%;
-//      }
-//  }
 .contact-section {
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
@@ -262,7 +247,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // margin-bottom: 60px;
+    align-items: baseline;
   }
 }
 
@@ -275,6 +260,8 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  border: none;
+  cursor: pointer;
 
   font-size: 16px;
   line-height: 1.31;
@@ -285,6 +272,7 @@
 
   @media screen and (min-width: 1200px) {
     min-width: 198px;
+    
   }
 
   &__arrow {
@@ -300,10 +288,12 @@
     color: #ffffff;
 
     margin: 0 0 10 0;
+    transition: background-color 250ms var(--cubic);
 
     &:focus,
     &:hover {
       background: var(--mob-menu-color);
+      transition: background-color 250ms var(--cubic);
     }
   }
 
@@ -316,12 +306,63 @@
   }
 
   &--white {
-    background: rgba(255, 245, 246, 1);
+    background: #ffffff;
     color: #d41443;
+    transition: background-color 250ms var(--cubic);
 
     &:focus,
     &:hover {
       background: #ecebeb;
+      transition: background-color 250ms var(--cubic);
     }
   }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0 20 20 16;
+    background-color: #ecebeb;
+    border-radius: 10px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    
+}
+
+.dropdown-content a {
+    color: #d41443;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+  
+}
+
+.show {
+  display: block;
+}
+
+.city {
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      color: #000000;
+      transition: color 250ms var(--cubic);
+      
+    }
 }
