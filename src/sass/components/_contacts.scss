@@ -285,7 +285,7 @@
       background: #d41342;
       color: #ffffff;
 
-      margin-bottom: 0 0 10 0;
+      margin: 0 0 10 0;
 
       &:focus,
       &:hover {
@@ -299,7 +299,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 0 12 0 0;
+    margin: 0 12 0 0;
   }
 
   &--white {
