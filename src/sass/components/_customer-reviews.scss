@@ -126,10 +126,13 @@
   color: var(--pseudo-color);
   display: block;
   // background-repeat: no-repeat;
-}
-.icon::after {
+
   background-image: url(../images/reviews/quots.svg);
 }
+
+// .icon::after {
+//   background-image: url(../images/reviews/quots.svg);
+// }
 
 .rev-slider__name {
   position: relative;
