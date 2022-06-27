@@ -112,7 +112,7 @@
 
   @media screen and (min-width: 768px) {
     left: 10px;
-    width: 60px;
+    width: 54px;
     background-size: cover;
   }
   @media screen and (min-width: 1200px) {
@@ -128,7 +128,7 @@
   // background-repeat: no-repeat;
 }
 .icon::after {
-  background-image: url(../images/reviews/“.svg);
+  background-image: url(../images/reviews/quots.svg);
 }
 
 .rev-slider__name {
