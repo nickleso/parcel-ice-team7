@@ -42,6 +42,16 @@
     <symbol id="arrow" viewBox="0 0 22 32">
       <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
     </symbol>
+
+    <symbol id="arrow-light" viewBox="0 0 22 32">
+      <path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
+    </symbol>
+
+
+    <symbol id="arrow-light" viewBox="0 0 22 32">
+      <path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
+
+
     <symbol id="icon-arrowmob" viewBox="0 0 26 32">
       <path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
     </symbol>
@@ -50,6 +60,7 @@
     </symbol>
     <symbol id="icon-arrowtab" viewBox="0 0 22 32">
       <path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.321 3.2l14.974 12.8-14.974 12.8"></path>
+
     </symbol>
     
   </defs>

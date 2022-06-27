@@ -1,3 +1,4 @@
+
 .container.products {
   background-color: var(--primary-bcg);
 }
@@ -24,7 +25,6 @@
   @media screen and(min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
-    letter-spacing: 0.04em;
   }
 }
 
@@ -36,7 +36,7 @@
   line-height: 1.14;
 
   text-align: center;
-  letter-spacing: 0.04em;
+
   text-transform: uppercase;
 
   color: var(--accent-color);
@@ -44,7 +44,6 @@
   @media screen and(min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
-    letter-spacing: 0.04em;
   }
 
   @media screen and(min-width: 1200px) {
@@ -292,7 +291,7 @@
   line-height: 1.15;
 
   text-align: center;
-  letter-spacing: 0.04em;
+
   text-transform: uppercase;
 
   color: var(--header-hero-text);
@@ -352,7 +351,6 @@
   line-height: 1.52;
 
   text-align: center;
-  letter-spacing: 0.04em;
 
   margin-bottom: 32px;
 
@@ -365,8 +363,6 @@
   @media screen and(min-width: 1200px) {
     font-size: 16px;
     line-height: 1.76;
-
-    letter-spacing: 0.04em;
 
     height: 120px;
     margin-bottom: 60px;

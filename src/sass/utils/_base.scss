@@ -16,14 +16,28 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .section {
@@ -100,12 +114,6 @@ img {
     font-size: 30px;
     line-height: 1.13;
   }
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .visually-hidden {
