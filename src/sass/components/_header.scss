@@ -1,8 +1,3 @@
-button {
-  padding: 0;
-  cursor: pointer;
-}
-
 .page-header {
   position: relative;
   background-color: var(--secondary-bcg);
@@ -39,7 +34,7 @@ button {
   border: none;
   padding: 15px 20px;
   z-index: 7;
-  transition: transform 250ms var(--cubic);
+  @extend %transitionTransform;
   &:hover,
   &:focus {
     transform: scale(1.2);

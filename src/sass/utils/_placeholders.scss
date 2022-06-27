@@ -17,7 +17,10 @@
   cursor: pointer;
 }
 
-// link styles - can use, but in progress
+%transitionTransform {
+  transition: transform 250ms var(--cubic);
+}
+
 %transitionColorStyles {
   transition: color 250ms var(--cubic);
 }
