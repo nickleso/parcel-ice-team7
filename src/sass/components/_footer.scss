@@ -1,5 +1,4 @@
 .page-footer {
-    position: relative;
     background-color: var(--primary-gradient);
     padding-top: 10px;
     @media screen and (min-width: 768px) {
@@ -27,6 +26,9 @@
             margin-bottom: 40px;
             width: 200px;
         }
+    }
+    &__container {
+        position: relative;
     }
 }
 
