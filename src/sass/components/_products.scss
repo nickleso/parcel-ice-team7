@@ -1,4 +1,3 @@
-
 .container.products {
   background-color: var(--primary-bcg);
 }
@@ -36,14 +35,17 @@
   line-height: 1.14;
 
   text-align: center;
-
   text-transform: uppercase;
+
+  margin-bottom: 8px;
 
   color: var(--accent-color);
 
   @media screen and(min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
+
+    margin-bottom: 20px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -56,8 +58,11 @@
 .products__list {
   @media screen and(min-width: 768px) {
     display: flex;
-    margin-top: 20px;
   }
+}
+
+.products__arrow {
+  cursor: pointer;
 }
 
 .products__item-cream,

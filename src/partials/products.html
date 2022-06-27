@@ -4,7 +4,7 @@
       <p class="products__label" id="products">100% natural</p>
       <h2 class="products__title">products</h2>
       <ul class="products__list list">
-        <li class="products__item-cream">
+        <li class="products__item-cream" data-aos="fade-right">
           <h3 class="products__name">ice cream</h3>
           <div class="products__desk">
             <p class="products__text-cream">
@@ -16,7 +16,7 @@
                 eiusmod tempor incididunt ut labore et</span
               >
             </p>
-            <picture>
+            <picture class="products__arrow">
               <source
                 srcset="
                   ./images/products/arrow-right-pr.png    1x,
@@ -34,7 +34,7 @@
             </picture>
           </div>
         </li>
-        <li class="products__item-coffee">
+        <li class="products__item-coffee" data-aos="zoom-in">
           <h3 class="products__name">ice coffee</h3>
           <div class="products__desk">
             <p class="products__text-coffee">
@@ -46,7 +46,7 @@
                 eiusmod tempor incididunt ut labore et</span
               >
             </p>
-            <picture>
+            <picture class="products__arrow">
               <source
                 srcset="
                   ./images/products/arrow-right-pr.png    1x,
@@ -64,7 +64,7 @@
             </picture>
           </div>
         </li>
-        <li class="products__item-milk">
+        <li class="products__item-milk" data-aos="fade-left">
           <h3 class="products__name">milkshakes</h3>
           <div class="products__desk">
             <p class="products__text-milk">
@@ -76,7 +76,7 @@
                 eiusmod tempor incididunt ut labore et</span
               >
             </p>
-            <picture>
+            <picture class="products__arrow">
               <source
                 srcset="
                   ./images/products/arrow-right-pr.png    1x,
@@ -99,5 +99,7 @@
     <script src="./js/read-more-cream.js"></script>
     <script src="./js/read-more-coffee.js"></script>
     <script src="./js/read-more-milk.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
   </div>
 </section>
