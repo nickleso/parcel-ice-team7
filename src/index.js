@@ -11,3 +11,5 @@ import './js/read-more-cream.js';
 import './js/read-more-coffee.js';
 import './js/read-more-milk.js';
 import './js/animation.js';
+
+import './js/mobile-menu-v2.js';
