@@ -1,4 +1,3 @@
-
 .contact-section {
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
@@ -37,7 +36,7 @@
   }
 
   &__item {
-    min-width: 280px;
+    max-width: 280px;
     padding: 40 32;
     background: rgb(255, 255, 255);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -48,7 +47,7 @@
     }
 
     @media screen and (min-width: 768px) {
-      min-width: 224px;
+      max-width: 224px;
 
       &:not(:last-child) {
         margin: 0 32 0 0;
@@ -56,7 +55,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 368px;
+      max-width: 368px;
       padding: 40 40;
 
       &:not(:last-child) {
@@ -226,11 +225,11 @@
   color: #907e82;
   transition: color 250ms var(--cubic);
 
-        &:hover,
-        &:focus {
-          color: #d41443;
-          transition: color 250ms var(--cubic);
-        }
+  &:hover,
+  &:focus {
+    color: #d41443;
+    transition: color 250ms var(--cubic);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 11px;
@@ -279,7 +278,6 @@
 
   @media screen and (min-width: 1200px) {
     min-width: 198px;
-    
   }
 
   &__arrow {
@@ -326,47 +324,42 @@
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    text-align: center;
-    padding: 0 20 20 10;
-    background-color: #ecebeb;
-    border-radius: 10px;
-    min-width: 160px;
-    // overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-    @media screen and (min-width: 768px) {
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 0 20 20 10;
+  background-color: #ecebeb;
+  border-radius: 10px;
+  min-width: 160px;
+  // overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
     min-width: 190px;
   }
 
   @media screen and (min-width: 1200px) {
     min-width: 198px;
-    
   }
-    
-
-    
 }
 
 .dropdown-content a {
-    color: #d41443;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    align-content: center;
-    transition:  250ms var(--cubic);
+  color: #d41443;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  align-content: center;
+  transition: 250ms var(--cubic);
 }
 
 .dropdown a:hover {
   background-color: #ddd;
-  
 }
 
 .show {
@@ -374,17 +367,17 @@
 }
 
 .city {
-font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: color 250ms var(--cubic);
+  transition-property: transform 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: #000000;
     transition: color 250ms var(--cubic);
     transition-property: transform 250ms var(--cubic);
-
-    &:hover,
-    &:focus {
-      color: #000000;
-      transition: color 250ms var(--cubic);
-      transition-property: transform 250ms var(--cubic);
-       transform: scale(1.3);        
-   }
+    transform: scale(1.3);
+  }
 }
