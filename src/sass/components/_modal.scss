@@ -58,12 +58,13 @@
     margin-right: 0;
     padding: 20px;
     transform: none;
-  }
-}
+    stroke: var(--header-hero-text);
 
-.modal-close:hover,
-.modal-close::focus {
-  fill: var(--secondary-btn-color);
+    &:hover,
+    &:focus {
+      stroke: var(--secondary-btn-color);
+    }
+  }
 }
 
 .user-form {
@@ -74,13 +75,13 @@
   padding-top: 40px;
   font-size: 12px;
 
-  &__field-cover:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
   &__field-cover {
     display: flex;
     flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   &__label {
@@ -125,10 +126,6 @@
     outline: none;
     cursor: pointer;
     transition: border 250ms var(--cubic);
-
-    &:focus-within .user-form__input-icon {
-      //   <!-- fill: blue; -->
-    }
 
     &:hover ~ .user-form__input-icon,
     &:focus ~ .user-form__input-icon {
