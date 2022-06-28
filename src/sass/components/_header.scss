@@ -3,7 +3,7 @@
   // background-color: rgba(255, 184, 202, 0.7);
   background-color: var(--secondary-bcg);
   margin: 0 auto;
-  overflow: hidden;
+
   height: 502px;
 
   @media (max-width: 767.98px) {
@@ -22,6 +22,7 @@
     // padding: 32px 16px 0 16px;
     // width: 100vw;
     height: 664px;
+    overflow: hidden;
   }
 }
 
