@@ -182,12 +182,12 @@
 .menu-container {
   @media (max-width: 1199.98px) {
     width: 100vw;
-    width: 250px;
+    max-width: 320px;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 900;
+    z-index: 500;
     padding: 60px 20px;
     background-color: var(--mob-menu-color);
 
@@ -195,10 +195,6 @@
     transform: translateX(100%);
     visibility: hidden;
     transition: transform 250ms var(--cubic), visibility 250ms var(--cubic);
-
-    @media (min-width: 768px) {
-      width: 254px;
-    }
   }
 
   @media (min-width: 1200px) {
@@ -206,26 +202,12 @@
       display: none;
     }
   }
-}
 
-.test-modal {
-  visibility: hidden;
-  display: none;
-  position: absolute;
-  display: block;
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-  z-index: 999;
-}
-.active.test-modal {
-  visibility: visible;
-}
-
-.menu-container.active {
-  visibility: visible;
-  transform: translateX(0);
-  background-color: #e17992;
+  &.active {
+    visibility: visible;
+    transform: translateX(0);
+    background-color: #e17992;
+  }
 }
 
 .mob-menu-container {
