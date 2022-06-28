@@ -130,10 +130,9 @@
   }
 
   &__link {
+    fill: var(--social-color1);
     @extend %linkStyles;
     @extend %transitionFillStyles;
-    fill: var(--social-color1);
-    transition: fill 250ms var(--cubic);
   }
 
   &__link:hover,
