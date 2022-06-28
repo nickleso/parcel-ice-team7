@@ -35,7 +35,6 @@
   text-align: left;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
     width: 200px;
   }
 }
@@ -142,6 +141,9 @@
 }
 
 .container-title {
+  @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
   @media screen and (min-width: 768px) {
     width: 340px;
     margin-right: 120px;
