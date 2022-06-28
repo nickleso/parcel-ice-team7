@@ -82,7 +82,7 @@
 }
 .container__text {
   text-align: center;
-  z-index: 200;
+  z-index: 0;
   @media screen and (max-width: 767px) {
     width: 157px;
     font-size: 12px;
