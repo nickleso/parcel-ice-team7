@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
-  background-color: rgba(255, 184, 202, 0.7);
+  // background-color: rgba(255, 184, 202, 0.7);
+  background-color: var(--secondary-bcg);
   margin: 0 auto;
   overflow: hidden;
   height: 502px;
