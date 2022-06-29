@@ -16,4 +16,8 @@ import './js/animation.js';
 import './js/read-more-about-scrol.js';
 import './js/read-more-about.js';
 
+// contacts scripts
+import './js/locations-our.js';
+import './js/locations-franchise.js';
+
 // import './js/mobile-menu-v2.js';
