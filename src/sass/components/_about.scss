@@ -98,9 +98,13 @@
 
     @media screen and (min-width: 768px) {
       width: 334px;
+      font-size: 14px;
+      line-height: 1.79;
+      letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1200px) {
       width: 463px;
+      line-height: 1.93;
     }
   }
 }
@@ -129,4 +133,49 @@
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: var(--hover-btn-primary);
+}
+
+// .moreText {
+//   display: none;
+// }
+
+// .show-more .moreText {
+//   display: block;
+//   height: auto;
+// }
+
+// .about-wrapper {
+//   height: auto;
+// }
+
+// .moreText {
+//   display: none;
+// }
+
+// .show-more .moreText {
+//   display: block;
+//   height: auto;
+// }
+
+.howmade__text {
+  height: 130px;
+  overflow: hidden;
+  transition: height 350ms var(--cubic);
+  @media (min-width: 768px) {
+    height: 126px;
+  }
+  @media (min-width: 1200px) {
+    height: 115px;
+  }
+}
+
+.howmade-open {
+  height: 270;
+
+  @media (min-width: 768px) {
+    height: 300px;
+  }
+  @media (min-width: 1200px) {
+    height: 250px;
+  }
 }

@@ -12,4 +12,8 @@ import './js/read-more-coffee.js';
 import './js/read-more-milk.js';
 import './js/animation.js';
 
+// about scripts
+import './js/read-more-about-scrol.js';
+import './js/read-more-about.js';
+
 // import './js/mobile-menu-v2.js';
