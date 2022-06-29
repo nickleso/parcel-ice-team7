@@ -1,18 +1,13 @@
 .section-advantages {
   background-color: var(--primary-gradient);
-  padding-bottom: 30px;
 
   @media screen and (max-width: 767px) {
     padding-top: 10px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 30px;
-    padding-bottom: 4px;
-  }
-
   @media screen and (min-width: 1200px) {
-    padding-bottom: 52px;
+    padding-top: 0;
+    padding-bottom: 60px;
   }
 }
 
