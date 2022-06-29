@@ -8,6 +8,7 @@
   @media (max-width: 767.98px) {
     padding-left: 20px;
     padding-top: 8px;
+    overflow: hidden;
   }
 
   @media (min-width: 768px) {
@@ -70,6 +71,11 @@
   }
 }
 .hero__img-girl {
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
   @media (max-width: 767.98px) {
     display: none;
   }
@@ -142,6 +148,7 @@
   line-height: 1.15;
   text-transform: uppercase;
   font-weight: 400;
+  cursor: default;
 
   &:hover .hero__title--white,
   &:focus .hero__title--white {
@@ -152,7 +159,7 @@
   &:hover .hero__title--pink,
   &:focus .hero__title--pink {
     color: var(--mob-menu-color);
-    text-shadow: 2px 2px 2px var(--primary-btn);
+    text-shadow: 2px 2px 2px var(--accent-color);
     transition: color 300ms var(--cubic), text-shadow 300ms var(--cubic);
   }
 
