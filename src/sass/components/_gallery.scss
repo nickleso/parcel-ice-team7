@@ -64,11 +64,32 @@
   @media screen and (min-width: 768px) {
     width: 105px;
     height: 105px;
+
+    filter: grayscale(100%);
+    transition: 0.5s ease-in-out;
   }
 
   @media screen and (min-width: 1200px) {
     width: 138px;
     height: 138px;
+  }
+}
+
+.gallery__image--one,
+.gallery__image--two,
+.gallery__image--three,
+.gallery__image--four,
+.gallery__image--five,
+.gallery__image--six,
+.gallery__image--seven,
+.gallery__image--eight,
+.gallery__image--nine,
+.gallery__image--ten {
+  &:hover {
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+      filter: grayscale(0);
+    }
   }
 }
 
