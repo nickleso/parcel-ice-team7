@@ -1,6 +1,11 @@
 <section class="section section--gallery">
-  <div class="container container--gallery">
-    <div class="gallery__column">
+  <h2 class="visually-hidden">Gallery</h2>
+  <ul
+    class="container container--gallery"
+    data-aos="fade-up"
+    data-aos-duration="800"
+  >
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--one">
         <source
           media="(min-width: 1200px)"
@@ -29,9 +34,9 @@
         />
         <img src="./images/gallery/gallery_1d.png" alt="Green icecream" />
       </picture>
-    </div>
+    </li>
 
-    <div class="gallery__column">
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--two">
         <source
           media="(min-width: 1200px)"
@@ -88,9 +93,9 @@
         />
         <img src="./images/gallery/gallery_3d.png" alt="Rose icecreams" />
       </picture>
-    </div>
+    </li>
 
-    <div class="gallery__column">
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--four">
         <source
           media="(min-width: 1200px)"
@@ -147,9 +152,9 @@
         />
         <img src="./images/gallery/gallery_5d.png" alt="Girl and icecream" />
       </picture>
-    </div>
+    </li>
 
-    <div class="gallery__column">
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--six">
         <source
           media="(min-width: 1200px)"
@@ -206,9 +211,9 @@
         />
         <img src="./images/gallery/gallery_7d.png" alt="Rote icecream" />
       </picture>
-    </div>
+    </li>
 
-    <div class="gallery__column">
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--eight">
         <source
           media="(min-width: 1200px)"
@@ -265,9 +270,9 @@
         />
         <img src="./images/gallery/gallery_9d.png" alt="Shoko shake" />
       </picture>
-    </div>
+    </li>
 
-    <div class="gallery__column">
+    <li class="gallery__column">
       <picture class="gallery__image gallery__image--ten">
         <source
           media="(min-width: 1200px)"
@@ -296,6 +301,10 @@
         />
         <img src="./images/gallery/gallery_10d.png" alt="Color icecream" />
       </picture>
-    </div>
-  </div>
+    </li>
+  </ul>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </section>

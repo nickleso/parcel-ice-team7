@@ -1,8 +1,5 @@
 .review-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @extend %centredColumnFlex;
 
   padding-bottom: 32px;
   @media screen and (min-width: 768px) {
@@ -85,7 +82,7 @@
 }
 .container__text {
   text-align: center;
-  z-index: 200;
+  z-index: 0;
   @media screen and (max-width: 767px) {
     width: 157px;
     font-size: 12px;
@@ -107,32 +104,27 @@
 .container__text::after {
   position: absolute;
   top: -14px;
-  left: -6px;
+  left: 0;
   width: 54px;
 
   @media screen and (min-width: 768px) {
     left: 10px;
-    width: 54px;
+    width: 60px;
     background-size: cover;
   }
   @media screen and (min-width: 1200px) {
-    left: -4px;
+    left: 0;
     width: 54px;
   }
   content: '';
-  z-index: 0;
+  z-index: -1;
   height: 40px;
 
   color: var(--pseudo-color);
   display: block;
-  // background-repeat: no-repeat;
 
   background-image: url(../images/Reviews/quots.svg);
 }
-
-// .icon::after {
-//   background-image: url(../images/Reviews/quots.svg);
-// }
 
 .rev-slider__name {
   position: relative;
@@ -149,7 +141,6 @@
 
   text-align: center;
   color: var(--primary-text);
-  // margin-bottom: 32px;
 }
 
 .rev-slider__name::before {
@@ -162,27 +153,22 @@
   display: block;
 
   transform: translateX(-50%);
-}
-
-.icon-el::before {
   background-image: url(../images/Reviews/rev.svg);
 }
 
 .rev-slider__name::after {
   position: absolute;
   left: 50%;
-  bottom: -16px;
+  bottom: -28px;
   content: '';
   height: 12px;
   width: 72px;
   display: block;
 
   @media screen and (min-width: 768px) {
-    bottom: -32px;
+    bottom: -38px;
   }
   transform: translateX(-50%);
-}
 
-.icon-el::after {
   background-image: url(../images/Reviews/dots.svg);
 }

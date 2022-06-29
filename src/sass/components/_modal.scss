@@ -1,0 +1,235 @@
+.backdrop.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.backdrop.active .modal-window {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-window {
+  position: fixed;
+  max-width: 320px;
+  width: 100%;
+  transition: transform 250ms var(--cubic);
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+  }
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.75);
+
+  max-height: calc(100vh);
+  overflow-y: auto;
+  opacity: 1;
+
+  max-width: 300px;
+  width: 100%;
+
+  background-color: var(--ice-color);
+  border-radius: 40px;
+
+  .modal-close {
+    z-index: 850;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin-right: 0;
+    padding: 20px;
+    transform: none;
+    stroke: var(--header-hero-text);
+
+    &:hover,
+    &:focus {
+      stroke: var(--secondary-btn-color);
+    }
+  }
+}
+
+.user-form {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 12px;
+
+  &__field-cover {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-form__field-cover + .user-form__field-cover {
+    margin-top: 10px;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+    color: var(--header-hero-text);
+  }
+
+  &__button {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .buy-button {
+    &__icon {
+      margin-left: 10px;
+    }
+  }
+
+  &__input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--cubic);
+    fill: var(--secondary-btn-color);
+  }
+
+  &__input-cover {
+    position: relative;
+    width: 100%;
+  }
+
+  &__input {
+    border: 1px solid white;
+
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    color: var(--accent-color);
+
+    outline: none;
+    cursor: pointer;
+    transition: border 250ms var(--cubic);
+
+    &:hover ~ .user-form__input-icon,
+    &:focus ~ .user-form__input-icon {
+      fill: var(--coffee-color);
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--coffee-color);
+    }
+  }
+
+  &__textarea {
+    resize: unset;
+
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 16px;
+    outline: none;
+    color: var(--accent-color);
+
+    transition: border 250ms var(--cubic);
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      color: var(--secondary-btn-color);
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--coffee-color);
+    }
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 20 0;
+    cursor: pointer;
+  }
+
+  &__policy-terms {
+    text-decoration: underline;
+    color: var(--secondary-btn-color);
+    cursor: pointer;
+  }
+
+  .accept {
+    color: var(--header-hero-text);
+  }
+
+  &__checkbox-icon {
+    display: flex;
+    align-items: center;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid var(--secondary-btn-color);
+    border-radius: 2px;
+    background-origin: border-box;
+    fill: var(--ice-color);
+
+    transition: border var(--cubic), background var(--cubic);
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:hover ~ .user-form__checkbox-icon {
+      border-color: var(--secondary-btn-color);
+    }
+
+    &:focus ~ .user-form__checkbox-icon {
+      border-color: var(--secondary-btn-color);
+    }
+
+    &:checked ~ .user-form__checkbox-icon {
+      background-color: var(--secondary-btn-color);
+      border-color: var(--secondary-btn-color);
+    }
+  }
+}
+
+.place-data {
+  display: block;
+  margin-bottom: 6px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--header-hero-text);
+}
