@@ -247,14 +247,28 @@
   align-items: center;
   justify-items: center;
 
+    & li:not(:last-child) {
+      margin: 0 0 10 0;
+
+      @media screen and (min-width: 768px) {
+           margin: 0 12 0 0;
+      }
+
+       @media screen and (min-width: 1200px) {
+      margin: 0 14 0 0;
+   }
+    }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
+    
   }
 
-  @media screen and (min-width: 1200px) {
-    align-items: baseline;
-  }
+   @media screen and (min-width: 1200px) {
+     align-items: baseline;
+   }
 }
 
 // Кнопка/////////////////////
@@ -271,13 +285,15 @@
 
   font-size: 16px;
   line-height: 1.31;
+  
 
   @media screen and (min-width: 768px) {
     min-width: 191px;
+    
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 198px;
+    min-width: 198px;   
   }
 
   &__arrow {
@@ -292,7 +308,6 @@
     background: #d41342;
     color: #ffffff;
 
-    margin: 0 0 10 0;
     transition: background-color 250ms var(--cubic);
 
     &:focus,
@@ -301,19 +316,15 @@
       transition: background-color 250ms var(--cubic);
     }
   }
-
-  @media screen and (min-width: 768px) {
-    margin: 0 14 0 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin: 0 12 0 0;
-  }
+            
+ 
+  
 
   &--white {
     background: #ffffff;
     color: #d41443;
     transition: background-color 250ms var(--cubic);
+   
 
     &:focus,
     &:hover {
@@ -323,30 +334,36 @@
   }
 }
 
+// Выпадающее меню
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  text-align: center;
-  padding: 0 20 20 10;
-  background-color: #ecebeb;
-  border-radius: 10px;
-  min-width: 160px;
-  // overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding: 0 20 20 10;
+    background-color: #ecebeb;
+    border-radius: 10px;
+    min-width: 160px;
+    // overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 
-  @media screen and (min-width: 768px) {
+      &--light {
+        background-color: var(--primary-gradient);
+      }
+    
+    @media screen and (min-width: 768px) {
     min-width: 190px;
   }
 
-  @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     min-width: 198px;
-  }
+  }      
 }
 
 .dropdown-content a {
@@ -359,7 +376,8 @@
 }
 
 .dropdown a:hover {
-  background-color: #ddd;
+
+  background-color: #ddd;  
 }
 
 .show {
@@ -367,17 +385,15 @@
 }
 
 .city {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  transition: color 250ms var(--cubic);
-  transition-property: transform 250ms var(--cubic);
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;   
+    transition: transform 250ms var(--cubic), color 250ms var(--cubic);
 
-  &:hover,
-  &:focus {
-    color: #000000;
-    transition: color 250ms var(--cubic);
-    transition-property: transform 250ms var(--cubic);
-    transform: scale(1.3);
-  }
+    &:hover,
+    &:focus {
+      color: #000000;
+      transition: color 250ms var(--cubic), transform 250ms var(--cubic); 
+       transform: scale(1.3);        
+    }
 }

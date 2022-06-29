@@ -100,43 +100,75 @@
       </li>
     </ul>
 
-    <ul class="button list">
+    <ul class="button list"> 
 
-      <li>
-        <a>         
+      <li>  
+               
            <button onclick="myFunction()" class="btn btn--red">Our Locations <svg class="btn__arrow btn__arrow--light" width="8" height="10">
               <use href="./images/icons-sprite.svg#arrow-light"></use>
               </svg></button>
-             <div id="myDropdown" class="dropdown-content">   
-                <a class="city" target="_blank" href="https://goo.gl/maps/tW8bSRx6J3Gr1xKQ8" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >Chicago</a>                
-                <a class="city" target="_blank" href="https://goo.gl/maps/HPLUA5pcxL6z7Lo18" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >Los Angeles</a>
-                <a class="city" target="_blank" href="https://goo.gl/maps/LUEGGQbdnjC8iEGa6" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >New York</a>
-             </div>                 
-        </a>
+
+           <div id="myDropdown" class="dropdown-content">   
+                <a class="city" target="_blank" href="https://goo.gl/maps/tW8bSRx6J3Gr1xKQ8">Chicago</a>                
+                <a class="city" target="_blank" href="https://goo.gl/maps/HPLUA5pcxL6z7Lo18">Los Angeles</a>
+                <a class="city" target="_blank" href="https://goo.gl/maps/LUEGGQbdnjC8iEGa6">New York</a>
+           </div>                 
+        
       </li>          
 
       <li>
-        <a class="btn btn--white link" href="index.html"  
-          >Franchise
-          <svg class="btn__arrow btn__arrow--red" width="8" height="10">   
-            <use href="./images/icons-sprite.svg#arrow"></use>
-          </svg>  
-        </a>  
-      </li>       
+
+        <button onclick="Functionmy()" class="btn btn--white link">Franchise<svg class="btn__arrow btn__arrow--red" width="8" height="10">   
+              <use href="./images/icons-sprite.svg#arrow"></use>
+              </svg></button>
+
+        <div id="Dropdownmy" class="dropdown-content dropdown-content--light">   
+           <a class="city" target="_blank" href="https://goo.gl/maps/oYeLThYvURY8Bx8S7">Kyiv</a>                
+           <a class="city" target="_blank" href="https://goo.gl/maps/tHwWh5qCYK6ifkC77">Lviv</a>
+           <a class="city" target="_blank" href="https://goo.gl/maps/4b6LCeififXKYKJV8">Odesa</a>
+        </div>
+  
+      </li>           
     </ul>  
-    </div> 
+    </div>  
 
     <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show");   
+    
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.btn')) { 
 
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+   
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function Functionmy() {
+      
+    document.getElementById("Dropdownmy").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) { 
+   
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -148,5 +180,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+
         
 </section>   
