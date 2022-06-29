@@ -11,7 +11,7 @@
     background-size: 280px 133px;
     background-image: url('../images/about/background/bg-milk-mob.png');
     background-repeat: no-repeat;
-    background-position: 70% 70%;
+    background-position: top 70% left 70%;
     background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
@@ -26,9 +26,6 @@
     align-items: center;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: auto;
     background-size: 1200px 521px;
     background-image: url('../images/about/background/bg-milk-desktop.png');
@@ -109,15 +106,19 @@
   }
 }
 
+.about-btn {
+  position: relative;
+}
+
 .secondary-btn {
+  @extend %centredFlex;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
 
   color: var(--secondary-btn-color);
   width: 176px;
@@ -128,34 +129,20 @@
   border-radius: 22px;
 
   transition: background-color 300ms var(--cubic);
+
+  &__icon {
+    position: absolute;
+    top: -1px;
+    left: 138px;
+    width: 8px;
+    height: 16px;
+    transform: translateY(100%);
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-primary);
+  }
 }
-
-.secondary-btn:hover,
-.secondary-btn:focus {
-  background-color: var(--hover-btn-primary);
-}
-
-// .moreText {
-//   display: none;
-// }
-
-// .show-more .moreText {
-//   display: block;
-//   height: auto;
-// }
-
-// .about-wrapper {
-//   height: auto;
-// }
-
-// .moreText {
-//   display: none;
-// }
-
-// .show-more .moreText {
-//   display: block;
-//   height: auto;
-// }
 
 .howmade__text {
   height: 130px;

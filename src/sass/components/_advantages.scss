@@ -16,10 +16,6 @@
   }
 }
 
-// .advantages-container {
-//   background-color: var(--primary-gradient);
-// }
-
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -27,7 +23,6 @@
 }
 
 .advantages__item {
-
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 32px;
