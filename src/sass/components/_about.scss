@@ -3,16 +3,13 @@
   margin-right: auto;
   // max-width: 1200px;
   background-color: var(--primary-gradient);
-}
-
-.content {
   @media screen and (max-width: 767.98px) {
     height: auto;
     background-size: 280px 133px;
     background-image: url('../images/about/background/bg-milk-mob.png');
     background-repeat: no-repeat;
-    background-position: 77% 77%;
-    background-size: contain;
+    background-position: 20px 560px;
+    // background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -20,17 +17,12 @@
       background-image: url('../images/about/background/bg-milk-mob@2x.png');
     }
   }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   @media screen and (min-width: 1200px) {
     height: auto;
-    background-size: 1200px 521px;
+    // background-size: 1200px 521px;
     background-image: url('../images/about/background/bg-milk-desktop.png');
     background-repeat: no-repeat;
-    background-position: 70% 70%;
+    background-position: 0 236px;
     background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
@@ -39,6 +31,42 @@
       background-image: url('../images/about/background/bg-milk-desktop@2x.png');
     }
   }
+}
+
+.content {
+  // @media screen and (max-width: 767.98px) {
+  //   height: auto;
+  //   background-size: 280px 133px;
+  //   background-image: url('../images/about/background/bg-milk-mob.png');
+  //   background-repeat: no-repeat;
+  //   background-position: 77% 77%;
+  //   background-size: contain;
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/about/background/bg-milk-mob@2x.png');
+  //   }
+  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   height: auto;
+  //   // background-size: 1200px 521px;
+  //   background-image: url('../images/about/background/bg-milk-desktop.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: contain;
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url('../images/about/background/bg-milk-desktop@2x.png');
+  //   }
+  // }
 }
 .img {
   // width: 280px;
