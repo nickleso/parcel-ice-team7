@@ -85,7 +85,12 @@
 
   &--axent {
     color: var(--accent-color);
+    @extend %transitionColorStyles;
   }
+    &--axent:hover,
+    &--axent:focus {
+      color: var(--secondary-text);
+    }
 
   &::after {
     display: inline-block;
