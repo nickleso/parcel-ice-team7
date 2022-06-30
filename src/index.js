@@ -1,6 +1,3 @@
-// test script
-import './js/js-test.js';
-
 // header-hero scripts
 import './js/mobile-menu.js';
 import './js/read-more-hero.js';
